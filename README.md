@@ -73,3 +73,13 @@ inventory-service/
 - **Spring Kafka**
 - **JUnit 5**
 - **Docker**
+
+## 🚀 CI/CD Pipeline
+
+- Checkout Code: Retrieves the latest code from the main branch.
+- JDK Setup: Installs Java 17 (Temurin) required for building and running tests.
+- Maven Cache: Caches dependencies to speed up the build process.
+- Permission Setup: Grants execute permission for the Maven wrapper script (./mvnw).
+- Build: Compiles and packages the application using Maven (./mvnw clean install).
+- Test Execution: Runs unit and integration tests to ensure code correctness.
+- Docker Image Build: Creates a Docker image tagged as inventory-service:latest for container deployment.
